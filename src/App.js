@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
 
-function App() {
+import UseState from "./components/UseState";
+import UseEffect from "./components/UseEffect";
+import CustomHook from "./components/CustomHook";
+import UseRef from "./components/UseRef";
+import MemoParent from "./components/MemoParent";
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>React Practice</h1>
+      <h2>React Hooks - M0920</h2>
+
+      <hr />
+      <UseState />
+      <br />
+      <hr />
+      <UseEffect />
+      <br />
+      <hr />
+      <CustomHook />
+      <br />
+      <hr />
+      <UseRef />
+      <br />
+      <hr />
+      <h2>memo / useMemo / useCallback</h2>
+      <MemoParent />
     </div>
   );
 }
-
-export default App;
